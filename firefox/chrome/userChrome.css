@@ -1,0 +1,39 @@
+/*
+enable custom css first:
+about:config
+toolkit.legacyUserProfileCustomizations.stylesheets
+*/
+
+/* hides the native tabs */
+#TabsToolbar {
+    visibility: collapse;
+}
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+    display: none;
+  }
+
+/*Collapse in default state and add transition*/
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] {
+    overflow: hidden;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    transition: all 0.2s ease;
+    border-right: 1px solid #0c0c0d;
+    z-index: 2;
+}
+  
+/*Expand to 260px on hover*/
+  
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"]:hover,
+
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar {
+    min-width: 150px !important;
+    max-width: 150px !important;
+    z-index: 1;
+}
+
+#navigator-toolbox {
+    --toolbarbutton-inner-padding: 4px !important; /* Adjust button padding */
+}
