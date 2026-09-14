@@ -1,1 +1,1 @@
-# configs
+Repo for personal configs
