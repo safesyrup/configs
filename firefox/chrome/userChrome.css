@@ -37,3 +37,12 @@ toolkit.legacyUserProfileCustomizations.stylesheets
 #navigator-toolbox {
     --toolbarbutton-inner-padding: 4px !important; /* Adjust button padding */
 }
+
+#sidebar-splitter {
+    width: 1px !important;
+    border: none !important;
+}
+
+#sidebar-box {
+    padding: 0px !important;
+}
